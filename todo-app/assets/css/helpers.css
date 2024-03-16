@@ -1,0 +1,46 @@
+.grid {
+    padding: 2rem 0;
+    display: grid;
+    gap: 2rem;
+}
+
+.grid-40-60 {
+    grid-template-columns: 30% 70%;
+}
+
+.container {
+    width: 120rem;
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+.button {
+    cursor: pointer;
+    padding: .8rem;
+    font-family: inherit;
+    border: 1px solid #ddd;
+    background-color: var(--main-color);
+    color: #fff;
+    width: 15rem;
+    max-width: 100%;
+    transition: all .4s ease-out;
+    border: 1px solid transparent;
+
+    &:hover {
+        background-color: #fff;
+        border-color: var(--main-color);
+        color:  var(--main-color);
+    }
+}
+
+.show-element {
+    display: block;
+    opacity: 1;
+    pointer-events: unset;
+}
+
+.hide-element {
+    display: none;
+    opacity: 0;
+    pointer-events: none;
+}

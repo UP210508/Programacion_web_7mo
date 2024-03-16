@@ -1,0 +1,81 @@
+:root {
+    --color-yellow: #FFAC54;
+    --color-blue: #2F7BFF;
+    --color-white: #f1f1f1;
+    --color-black: #2c2b2b;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-black);
+    overflow-x: hidden;
+    font-size: 1.6rem;
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    padding: 1.2rem 2.4rem;
+    font-family: inherit;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--color-white);
+    border-radius: 5px;
+}
+
+.button--blue {
+    background-color: var(--color-blue);
+}
+
+.button--yellow {
+    background-color: var(--color-yellow);
+}
+
+.button--black {
+    background-color: var(--color-black);
+}
+
+.counter {
+    padding: 2rem;
+    padding-top: 6.4rem;
+    border-radius: 10px;
+    background-color: var(--color-white);
+    width: 55rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4.8rem;
+}
+
+.counter__title {
+    font-size: 3.2rem;
+    font-weight: 500;
+}
+
+.counter__buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
